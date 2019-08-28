@@ -1,5 +1,6 @@
 import 'package:expense/transaction.dart';
 import 'package:flutter/material.dart';
+import 'package:intl/intl.dart';
 import './transaction.dart';
 void main() => runApp(MyApp());
 
@@ -41,6 +42,10 @@ class _MyHomePageState extends State<MyHomePage> {
     ),
     
   ];
+
+  String titleInput;
+  String amountInput;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -61,6 +66,38 @@ class _MyHomePageState extends State<MyHomePage> {
               ) 
              
               ),
+              Card(
+                elevation: 5,
+                child: Container( 
+                 padding: EdgeInsets.all(15),
+                 child:Column(
+                   crossAxisAlignment: CrossAxisAlignment.end,
+                   children: <Widget>[
+                    TextField(
+                      decoration: InputDecoration(labelText: 'Title'),
+                      onChanged: (value){
+                       titleInput =  value;
+                      }
+                      ,),
+                    TextField(
+                      decoration: InputDecoration(labelText: 'Amount'),
+                      onChanged: (value){
+                       amountInput =  value;
+                      }
+                      ),
+                    FlatButton(
+                      child:Text('Add Transaction'),
+                      textColor: Colors.black,
+                      onPressed:(){
+                        print(titleInput);
+                        print(amountInput);
+                      },
+                    )
+            
+              ],
+              )
+              ),
+              ),
                Column(
                   children: transactions.map((tx){
                   return Card(
@@ -74,7 +111,7 @@ class _MyHomePageState extends State<MyHomePage> {
                             padding: EdgeInsets.all(10),
                             
                             child: Text(
-                              tx.amount.toString(),
+                             '₹ '+ tx.amount.toString(),
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
                                 fontSize: 20,
@@ -95,9 +132,8 @@ class _MyHomePageState extends State<MyHomePage> {
 
                             ),
                             Text(
-                              tx.date.toString(),
+                               DateFormat.yMMMd().format(tx.date),
                                style: TextStyle(
-                                
                                 fontSize: 13,
                                 color: Colors.grey                           
                               ),)
