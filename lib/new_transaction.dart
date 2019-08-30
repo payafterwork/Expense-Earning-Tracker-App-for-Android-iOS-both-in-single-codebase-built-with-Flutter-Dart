@@ -23,7 +23,7 @@ class NewTransaction extends StatelessWidget {
                       }
                       ,),
                     TextField(
-                      
+            
                       decoration: InputDecoration(labelText: 'Amount'),
                       onChanged: (value){
                        amountInput =  value;

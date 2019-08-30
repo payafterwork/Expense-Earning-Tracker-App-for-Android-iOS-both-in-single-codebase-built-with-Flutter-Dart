@@ -7,11 +7,13 @@ import 'package:intl/intl.dart';
   TransactionList(this.transactions);
   @override
   Widget build(BuildContext context) {
-    return Column(
-                   children: transactions.map((tx){
-                  return Card(
-                    child:Row( 
-                      children: <Widget>[
+    return 
+    Container(
+    height: 300,
+    child:ListView.builder(
+          itemBuilder: (ctx, index){ // Loads data as seen on screen, and renders hidden ones slowly as they come visible
+              return Card(
+                    child:Row(children: <Widget>[
                      
                         Container(
                             margin: EdgeInsets.symmetric(vertical: 10,horizontal: 15),
@@ -19,7 +21,7 @@ import 'package:intl/intl.dart';
                             padding: EdgeInsets.all(10),
                             
                             child: Text(
-                             '₹ '+ tx.amount.toString(),
+                             '₹ '+ transactions[index].amount.toString(),
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
                                 fontSize: 20,
@@ -31,7 +33,7 @@ import 'package:intl/intl.dart';
                              crossAxisAlignment: CrossAxisAlignment.start,
                             children: <Widget>[
                             Text(
-                              tx.title,
+                              transactions[index].title,
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
                                 fontSize: 16,
@@ -40,7 +42,7 @@ import 'package:intl/intl.dart';
 
                             ),
                             Text(
-                               DateFormat.yMMMd().format(tx.date),
+                               DateFormat.yMMMd().format(transactions[index].date),
                                style: TextStyle(
                                 fontSize: 13,
                                 color: Colors.grey                           
@@ -50,7 +52,8 @@ import 'package:intl/intl.dart';
                                           
                     ],)
                   );
-                  }).toList(), //Now each transaction will be represented as widget
-              );     
+          }, itemCount: transactions.length,//Now each transaction will be represented as widget
+              )  
+    );     
   }
 }
