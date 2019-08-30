@@ -10,7 +10,22 @@ import 'package:intl/intl.dart';
     return 
     Container(
     height: 500,
-    child:ListView.builder(
+    child: transactions.isEmpty ? 
+    Column(children: <Widget>[ 
+      Text('No laundry added yet!'),
+      SizedBox(
+        height: 20,
+      ),
+      Container(
+        child:Image.asset(
+          'assets/images/waiting.jpg',
+          fit:BoxFit.cover,
+          )
+        ),
+      ],
+      )
+      :
+      ListView.builder(
           itemBuilder: (ctx, index){ // Loads data as seen on screen, and renders hidden ones slowly as they come visible
               return Card(
                     child:Row(children: <Widget>[
