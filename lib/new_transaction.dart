@@ -13,6 +13,7 @@ class NewTransaction extends StatelessWidget {
       return;
     }
     addTx(titleInput,double.parse(amountInput));
+ 
   }
   @override
   Widget build(BuildContext context) {

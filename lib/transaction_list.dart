@@ -9,7 +9,7 @@ import 'package:intl/intl.dart';
   Widget build(BuildContext context) {
     return 
     Container(
-    height: 300,
+    height: 500,
     child:ListView.builder(
           itemBuilder: (ctx, index){ // Loads data as seen on screen, and renders hidden ones slowly as they come visible
               return Card(
