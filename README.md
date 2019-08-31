@@ -7,12 +7,11 @@ Dervied App Example:
 *Laundry Expense Tracker App*
 Download APK for DEMO: http://bit.ly/LaundryFlutterApp
 
-![alt text](https://raw.githubusercontent.com/payafterwork/VueFirebaseAuth-Vue-with-Firebase-Authentication/master/img.PNG)
+![alt text](https://raw.githubusercontent.com/payafterwork/Expense-Earning-Tracker-App-for-both-iOS-Android-single-codebase-built-with-Flutter-Dart/master/ss1.jpeg)
 
-![alt text](https://raw.githubusercontent.com/payafterwork/VueFirebaseAuth-Vue-with-Firebase-Authentication/master/img.PNG)
+![alt text](https://raw.githubusercontent.com/payafterwork/Expense-Earning-Tracker-App-for-both-iOS-Android-single-codebase-built-with-Flutter-Dart/master/ss2.jpeg)
 
-![alt text](https://raw.githubusercontent.com/payafterwork/VueFirebaseAuth-Vue-with-Firebase-Authentication/master/img.PNG)
+![alt text](https://raw.githubusercontent.com/payafterwork/Expense-Earning-Tracker-App-for-both-iOS-Android-single-codebase-built-with-Flutter-Dart/master/ss3.jpeg)
 
-![alt text](https://raw.githubusercontent.com/payafterwork/VueFirebaseAuth-Vue-with-Firebase-Authentication/master/img.PNG)
 
 
