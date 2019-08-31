@@ -70,6 +70,13 @@ class _MyHomePageState extends State<MyHomePage> {
       );
     }).toList();
   }
+  void _deleteTransaction(String id){
+    setState((){
+      _userTransactions.removeWhere((tx){
+        return tx.id==id;
+      });
+    });
+  }
 
   void _addNewTransaction(String txTitle, double txAmount,DateTime choosenDate) {
     final newTx = Transaction(
@@ -116,8 +123,9 @@ class _MyHomePageState extends State<MyHomePage> {
           // mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: <Widget>[
+           
             Chart(_recentTransactions),
-            TransactionList(_userTransactions),
+            TransactionList(_userTransactions,_deleteTransaction),
           ],
         ),
       ),
