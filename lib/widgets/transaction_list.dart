@@ -16,7 +16,7 @@ class TransactionList extends StatelessWidget {
           ? Column(
               children: <Widget>[
                 Text(
-                  'No transactions added yet!',
+                  'No laundry item order yet!',
                   style: Theme.of(context).textTheme.title,
                 ),
                 SizedBox(
@@ -44,7 +44,7 @@ class TransactionList extends StatelessWidget {
                       child: Padding(
                         padding: EdgeInsets.all(6),
                         child: FittedBox(
-                          child: Text('\$${transactions[index].amount}'),
+                          child: Text('\₹${transactions[index].amount}'),
                         ),
                       ),
                     ),

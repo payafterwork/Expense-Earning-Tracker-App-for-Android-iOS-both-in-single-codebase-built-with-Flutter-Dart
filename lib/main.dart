@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Expense/Earnings Tracker',
+      title: 'Laundry Earnings Tracker',
       theme: ThemeData(
           primarySwatch: Colors.blue,
           accentColor: Colors.blue[800],
@@ -109,7 +109,7 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          'Expense/Earnings Tracker',
+          'Laundry Earnings Tracker',
         ),
         actions: <Widget>[
           IconButton(

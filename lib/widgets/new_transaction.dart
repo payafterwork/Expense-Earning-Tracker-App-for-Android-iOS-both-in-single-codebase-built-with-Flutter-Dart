@@ -58,7 +58,7 @@ class _NewTransactionState extends State<NewTransaction> {
           crossAxisAlignment: CrossAxisAlignment.end,
           children: <Widget>[
             TextField(
-              decoration: InputDecoration(labelText: 'Title'),
+              decoration: InputDecoration(labelText: 'Item Title: '),
               controller: _titleController,
               onSubmitted: (_) => _submitData(),
               // onChanged: (val) {
@@ -66,7 +66,7 @@ class _NewTransactionState extends State<NewTransaction> {
               // },
             ),
             TextField(
-              decoration: InputDecoration(labelText: 'Amount'),
+              decoration: InputDecoration(labelText: 'Amount (₹): '),
               controller: _amountController,
               keyboardType: TextInputType.number,
               onSubmitted: (_) => _submitData(),
@@ -76,7 +76,7 @@ class _NewTransactionState extends State<NewTransaction> {
              height: 70,
              child: Row(children: <Widget>[
               Expanded(
-                child:Text(_selectedDate == null ? 'No date chosen': 'Picked Date: ${DateFormat.yMd().format(_selectedDate)}' ),
+                child:Text(_selectedDate == null ? 'No date chosen': 'Order Date: ${DateFormat.yMd().format(_selectedDate)}' ),
               ),
               FlatButton(
                 textColor: Theme.of(context).primaryColor,
