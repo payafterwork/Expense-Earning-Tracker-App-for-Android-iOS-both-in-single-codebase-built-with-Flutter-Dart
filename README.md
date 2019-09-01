@@ -8,11 +8,11 @@ Dervied App Example:
 
 # Download APK for DEMO: http://bit.ly/LaundryFlutterApp
 
-![alt text](https://raw.githubusercontent.com/payafterwork/Expense-Earning-Tracker-App-for-both-iOS-Android-single-codebase-built-with-Flutter-Dart/master/ss1.jpeg)
+![alt text](https://raw.githubusercontent.com/payafterwork/Expense-Earning-Tracker-App-for-both-iOS-Android-single-codebase-built-with-Flutter-Dart/master/ss1.jpeg?style=flat-square)
 
-![alt text](https://raw.githubusercontent.com/payafterwork/Expense-Earning-Tracker-App-for-both-iOS-Android-single-codebase-built-with-Flutter-Dart/master/ss2.jpeg)
+![alt text](https://raw.githubusercontent.com/payafterwork/Expense-Earning-Tracker-App-for-both-iOS-Android-single-codebase-built-with-Flutter-Dart/master/ss2.jpeg?style=flat-square)
 
-![alt text](https://raw.githubusercontent.com/payafterwork/Expense-Earning-Tracker-App-for-both-iOS-Android-single-codebase-built-with-Flutter-Dart/master/ss3.jpeg)
+![alt text](https://raw.githubusercontent.com/payafterwork/Expense-Earning-Tracker-App-for-both-iOS-Android-single-codebase-built-with-Flutter-Dart/master/ss3.jpeg?style=flat-square)
 
 
 
